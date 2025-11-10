@@ -2,6 +2,8 @@
 
 This repository contains a **layered testbench implementation** used to verify the functionality of an SPI (Serial Peripheral Interface) master–slave communication system. The verification follows a **UVM-lite style** environment, separating stimulus generation, driving, monitoring, and result checking to ensure clarity, scalability, and reusability.
 
+**When running on EDA Playground add (-access +rwc -coverage all -covoverwrite -covtest spi_loopback) in Run Options to see coverage analysis.**
+
 ## 🧩 Testbench Architecture
 The testbench is structured into the following components:
 - **Transaction** – Represents a single SPI data frame (Master TX/RX and Slave TX/RX).
